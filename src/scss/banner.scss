@@ -1,0 +1,49 @@
+.banner{
+  padding: 200px 0;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.banner-form{
+  display: inline-block;
+  margin-top: 17px;
+  @include tablet{
+    display:flex;
+    flex-direction: column;
+  }
+}
+.banner-form__input {
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  border: solid 2px $dark-grey;
+  border-radius: 3px;
+  outline: none;
+  background: transparent;
+  color: white;
+  &::placeholder{
+    color: white;
+  }
+  &:first-child{
+    margin-right: 24px;
+    @include tablet{
+      margin-right: 0;
+    }
+  }
+}
+.banner-form__btn{
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  background: $green;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
+}

@@ -2,26 +2,34 @@
   font-weight: 400;
   font-family: Roboto;
   font-style: normal;
-  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  src: url("../fonts/Roboto-Regular.ttf") format("woff");
 }
 @font-face {
   font-weight: 600;
   font-family: Roboto;
   font-style: normal;
-  src: url("../fonts/Roboto-Medium.ttf") format("ttf");
+  src: url("../fonts/Roboto-Medium.ttf") format("woff");
 }
 @font-face {
-  font-weight: 800;
+  font-weight: 700;
   font-family: Roboto;
   font-style: normal;
-  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+  src: url("../fonts/Roboto-Bold.ttf") format("woff");
 }
 * {
   box-sizing: border-box;
   font-family: Roboto, san-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #cacaca;
+}
+
+body, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
 }
 
 .container {
@@ -38,26 +46,199 @@
 h1 {
   font-size: 60px;
   line-height: 90px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 @media (max-width: 450px) {
   h1 {
     font-size: 30px;
-    font-weight: 45px;
+    line-height: 45px;
   }
 }
 
 h2 {
   font-size: 38px;
   line-height: 57px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 @media (max-width: 450px) {
   h2 {
     font-size: 18px;
-    font-weight: 27px;
+    line-height: 27px;
+  }
+}
+
+.text-main {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.banner {
+  padding: 200px 0;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.banner-form {
+  display: inline-block;
+  margin-top: 17px;
+}
+@media (max-width: 800px) {
+  .banner-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.banner-form__input {
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  border: solid 2px #cacaca;
+  border-radius: 3px;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+.banner-form__input::placeholder {
+  color: white;
+}
+.banner-form__input:first-child {
+  margin-right: 24px;
+}
+@media (max-width: 800px) {
+  .banner-form__input:first-child {
+    margin-right: 0;
+  }
+}
+
+.banner-form__btn {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  background: #34c176;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .header__container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo__image {
+  width: 24px;
+  height: 24px;
+}
+
+.logo__text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16.5px;
+  margin-left: 16px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header__nav {
+  margin-left: 90px;
+}
+@media (max-width: 800px) {
+  .header__nav {
+    margin-left: 0;
+    margin-top: 17px;
+    margin-bottom: 18px;
+  }
+}
+
+.header__nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 320px;
+  padding-bottom: 3px;
+}
+@media (max-width: 800px) {
+  .header__nav-list {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #cacaca;
+  font-size: 11px;
+  line-height: 16.5px;
+  text-transform: uppercase;
+}
+.header__nav-link_current {
+  color: white;
+}
+
+.header__search {
+  margin-left: auto;
+}
+@media (max-width: 800px) {
+  .header__search {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.search__input {
+  outline: none;
+  width: 248px;
+  padding: 5px 0 5px 10px;
+  border-radius: 50px;
+  border: none;
+  background: #3c3b3d;
+  color: #757575;
+}
+.search__input::placeholder {
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  .search__input {
+    width: 100%;
   }
 }
 
