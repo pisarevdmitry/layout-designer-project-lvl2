@@ -420,4 +420,52 @@ h3 {
   padding: 20px 30px;
 }
 
+.page-app {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #08020d;
+  color: white;
+}
+
+.page-app__body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+@media (max-width: 960px) {
+  .page-app__body {
+    flex-direction: column;
+  }
+}
+
+.page-app__content, .page-app__image {
+  width: calc(50% - 70px);
+}
+@media (max-width: 960px) {
+  .page-app__content, .page-app__image {
+    width: 100%;
+  }
+}
+
+.page-app__content {
+  min-width: 600px;
+  text-align: left;
+  padding-top: 15px;
+}
+@media (max-width: 960px) {
+  .page-app__content {
+    min-width: 100%;
+    order: 2;
+  }
+}
+
+.page-app__btn {
+  padding: 16px 40px;
+  border-radius: 32px;
+  font-size: 12.8px;
+  background: #95390c;
+  margin-top: 16px;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
