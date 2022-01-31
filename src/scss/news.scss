@@ -13,9 +13,16 @@
   }
   &:nth-child(2n) .new-item__image{
     order: 2;
+    @include tablet {
+      order: 0;
+    }
   }
   @include tablet {
     flex-direction: column;
+    margin-bottom: 64px;
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
 .new-item__image ,.news-item__body{
