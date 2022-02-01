@@ -5,8 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Box</title>
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo">
+        <img class="logo__image" src="./images/logo.svg" alt="logo">
+        <span class="logo__text">Music Box</span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link_current" href="#">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Исполнители</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="search header__search" action="">
+        <input class="search__input" type="text" name="search" id="search" placeholder="Поиск...">
+      </form>
+    </div>
+  </header>
+  <section class="descirption" id="page-description">
+    <div class="container">
+      <h1>Morten Harket</h1>
+      <span class="text-main">24 875 поклонников</span>
+      <div class="descirption__btns">
+        <button class="btn descirption__btn descirption__btn_purple">
+          <img class="descirption__btn-image" src="./images/play-button.svg" alt="button-image">
+          <span class="descirption__btn-text">МИКС</span>
+        </button>
+        <button class="btn descirption__btn descirption__btn_red">
+          <img class="descirption__btn-image" src="./images/heart.svg" alt="button-image">
+          <span class="descirption__btn-text">В ИЗБРАННОЕ</span>
+        </button>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
