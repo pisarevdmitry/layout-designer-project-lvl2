@@ -1,0 +1,57 @@
+.tracks{
+  padding-top: 100px;
+  background: $black;
+  color: white;
+}
+.trecks-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+.track {
+  width: calc(50% - 25px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  @include tablet {
+    width: 100%;
+  }
+ &:nth-last-child(1) {
+   @include tablet {
+     margin-bottom: 0;
+   }
+ }
+}
+.track__image{
+  width: 55px;
+  height: 55px;
+}
+.track__desc{
+  margin-left: 15px;
+}
+.track__desc-name, .track__desc-author, .track__time{
+  font-size: 12.8px;
+  line-height: 19.2px;
+  margin: 0;
+}
+.track__desc-name{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.track__desc-author, .track__time{
+  font-weight: 400;
+}
+.track__time {
+  margin-left: auto;
+}

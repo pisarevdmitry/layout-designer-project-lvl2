@@ -28,6 +28,10 @@ body, p, ul, li {
   padding: 0;
 }
 
+body {
+  min-width: 340px;
+}
+
 ul, li {
   list-style-type: none;
 }
@@ -639,6 +643,78 @@ h3 {
 
 .descirption__btn-text {
   font-size: 12.8px;
+}
+
+.tracks {
+  padding-top: 100px;
+  background: #08020d;
+  color: white;
+}
+
+.trecks-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+@media (max-width: 800px) {
+  .trecks-list {
+    flex-direction: column;
+  }
+}
+
+.track {
+  width: calc(50% - 25px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.track:nth-last-child(2) {
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .track:nth-last-child(2) {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .track {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .track:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.track__image {
+  width: 55px;
+  height: 55px;
+}
+
+.track__desc {
+  margin-left: 15px;
+}
+
+.track__desc-name, .track__desc-author, .track__time {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  margin: 0;
+}
+
+.track__desc-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.track__desc-author, .track__time {
+  font-weight: 400;
+}
+
+.track__time {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
