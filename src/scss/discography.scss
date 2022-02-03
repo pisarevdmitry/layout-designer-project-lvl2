@@ -1,0 +1,27 @@
+.discography{
+  padding-top: 100px;
+  color: white;
+  background: $black;
+}
+.discography-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px 50px;
+  @media(max-width: 1170px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include tabletMax {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.discography-list__image{
+  max-width: 250px;
+  max-height: 250px;
+  @include tablet {
+    max-width: 137px;
+    max-height: 137px;
+  }
+}
+.discography-list__author{
+  margin-bottom: 0;
+}

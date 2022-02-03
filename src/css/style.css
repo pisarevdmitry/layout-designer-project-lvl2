@@ -80,6 +80,13 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .text-main {
   font-size: 16px;
   line-height: 24px;
@@ -715,6 +722,43 @@ h3 {
 
 .track__time {
   margin-left: auto;
+}
+
+.discography {
+  padding-top: 100px;
+  color: white;
+  background: #08020d;
+}
+
+.discography-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px 50px;
+}
+@media (max-width: 1170px) {
+  .discography-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 960px) {
+  .discography-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.discography-list__image {
+  max-width: 250px;
+  max-height: 250px;
+}
+@media (max-width: 800px) {
+  .discography-list__image {
+    max-width: 137px;
+    max-height: 137px;
+  }
+}
+
+.discography-list__author {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
