@@ -1,9 +1,9 @@
-.discography{
-  padding-top: 100px;
+.similar{
+  padding: 100px 0;
   color: white;
   background: $black;
 }
-.discography-list{
+.similar-list{
   margin-top: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,7 +15,12 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-.discography-list__image{
+.similar-list__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.similar-list__image{
   max-width: 250px;
   max-height: 250px;
   @include tablet {
@@ -23,6 +28,7 @@
     max-height: 137px;
   }
 }
-.discography-list__author{
+.similar-list__name{
   margin-bottom: 0;
+  text-transform: none;
 }
